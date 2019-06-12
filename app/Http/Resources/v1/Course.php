@@ -16,7 +16,8 @@ class Course extends JsonResource
     {
        // return parent::toArray($request);
         return [
-            'title'=>$this->title
+            'title'=>$this->title,
+            
         ];
     }
 }

@@ -18,10 +18,12 @@ class CourseCollection extends ResourceCollection
         return [
            'data'=>$this->collection->map(function ($item){
                return[
-               'title'=>$item->title,
+                   'title'=>$item->title,
                    'created_at'=>$item->created_at
+
                ];
-           })
+           }),
+            'status'=>'success'
         ];
     }
 }
